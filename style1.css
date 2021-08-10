@@ -1,0 +1,284 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #1977cc;
+  }
+  
+  a:hover {
+    color: #3291e6;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+  #header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+    height: 60px;
+    padding-top: 13px;
+  }
+  
+  
+  
+  #header .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    top: 30px;
+  }
+  
+  #header .logo a {
+    color: #1efc94;
+  }
+  
+  #header .logo img {
+    max-height: 40px;
+  }
+  
+  
+  
+  
+  
+  .side_bar{
+    background-color: #1efc94;
+    height: 100%;
+    margin-top: -16px;
+    padding-top: 35px;
+   
+}
+
+
+  .items{
+      margin-bottom: 70px;
+  }
+
+  .items label{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .items label:hover{
+      color: grey;
+  }
+
+ .name1
+{
+    font-size: 20px;
+    color: #2c4964;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; 
+}
+
+
+label {
+    font-size: 20px;
+    color: #28faa2;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+
+.field{
+   
+    align-items: center;
+}
+
+
+
+i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.btnnew{
+    width: 86px;
+    height: 30px;
+    background:#00ff80 ;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.bow{
+    padding-right: 1em;
+}
+
+.btnnew input[type=submit]{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.btnnew i{
+    font-size: 13px;
+}
+
+.btnnew:hover{
+    background: black;
+    color: white;
+    transition-timing-function: ease-out;
+    transition: 0.40s;
+    transform: translateY(0);
+}
+
+
+.blur{
+    background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px); 
+}
+
+.over{
+    margin-top: 4em ;
+    border: 2px solid grey;
+    height: 600px;
+    background-color: #00ff88;
+    
+    
+}
+
+#one{
+    display: none;
+}
+
+.label{
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+
+.label label{
+    color: white;
+}
+
+.input{
+
+    margin-bottom: 19px;
+    background-color: white;
+    width: 343px;
+    height: 51px;
+    border-radius: 55px;
+    border: 2px solid gray;
+    align-items: center;
+    padding-left: 1.5em;
+    margin-top: 30px;
+    
+}
+
+.close{
+    margin-bottom: 10px;
+    width: 366px;
+    padding-right: 8px;
+}
+
+.close i{
+    color: white;
+    margin-left: -3px;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    
+}
+
+.input i{
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: -80px;
+    margin-right: 10px;
+    color: #00f08c;
+}
+
+::placeholder{
+    color: black;
+}
+
+input[type=file]::file-selector-button {
+    
+    display: none;
+  }
+
+
+  .fileinp{
+    margin-bottom: 19px;
+    background-color: white;
+    width: 343px;
+    height: 51px;
+    border-radius: 55px;
+    border: 2px solid gray;
+    align-items: center;
+    padding-left: 1.5em;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .fileinp i{
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: -14px;
+    margin-right: 10px;
+    color: #00d86c;
+    
+  }
+
+  .fileinp input{
+      width: 278px;
+      
+  }
+
+  .fileinp .second{
+      margin-left:-35px;
+  }
+
+  .btn{
+      width: 130px;
+      height: 38px;
+      background-color: white;
+      margin-top: 30px;
+
+      
+  }
+
+  input[type=submit]{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+    transition-timing-function: ease-out;
+    transition: 0.40s;
+    transform: translateY(0);
+}
+
+.icon:hover{
+    color: #01d472;
+    } 
+
+
+
