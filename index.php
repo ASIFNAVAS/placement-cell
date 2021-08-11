@@ -374,55 +374,30 @@ Let’s pledge to work together to take our school to further heights of excelle
         <!-- ======= Trainers Section ======= -->
     <section id="trainers" class="trainers">
       <div class="container" data-aos="fade-up">
+      <div class="section-title">
+          <h2>placed students</h2>
+          
+        </div>
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="https://ashiqsabith123.github.io/Placement_Cell/Images/WhatsApp%20Image%202021-06-07%20at%2010.34.27%20PM%20(1).jpeg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>ABHISHEK</h4>
-                <span>RAKON ELECTRONICS</span>
-                <!--p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                </p-->
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <?php 
+        $connection=mysqli_connect("localhost","root","");
+        $db=mysqli_select_db($connection,'placed');
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="https://ashiqsabith123.github.io/Placement_Cell/Images/PP-17493-%20AKASH.JPG" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>AKASH SUNIL</h4>
-                <span>TATA ELXSI</span>
-                <!--p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p-->
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        $query=" SELECT * FROM `studentlist` ";
 
+        $query_run=mysqli_query($connection,$query);
+
+        while($row=mysqli_fetch_array($query_run)){
+          ?>
+            
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="https://ashiqsabith123.github.io/Placement_Cell/Images/WhatsApp%20Image%202021-06-07%20at%2010.40.51%20PM.jpeg" class="img-fluid" alt="">
+            <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).' " class="img-fluid""> ' ?>
               <div class="member-content">
-                <h4>ARYAMOL V</h4>
-                <span>TATA ELXSI</span>
-                <!--p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p-->
+              <h4><?php echo $row['name'] ?></h4>
+              <span><?php echo $row['department'] ?></span>
+                <p><?php echo $row['company'] ?></p>
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -432,60 +407,11 @@ Let’s pledge to work together to take our school to further heights of excelle
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="https://ashiqsabith123.github.io/Placement_Cell/Images/PicsArt_09-08-06.58.11.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>AHESH DHINESH</h4>
-                <span>SAARANGA</span>
-                <!--p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p-->
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>NAME</h4>
-                <span>COMPANY NAME</span>
-                <!--p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p-->
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>NAME</h4>
-                <span>COMPANY NAME</span>
-                <!--p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p-->
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php
+          
+        }
+                           
+       ?>
 
         </div>
 
